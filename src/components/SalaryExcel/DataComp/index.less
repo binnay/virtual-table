@@ -1,0 +1,42 @@
+.tbody {
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #d8e8e8;
+
+  .container {
+    .dataBox {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .dataBox {
+        position: relative;
+      }
+    }
+  }
+
+  .moveLine {
+    position: fixed;
+    width: 1px;
+    background-color: #d89c73;
+    z-index: 999;
+    display: none;
+  }
+
+  .fixedLine {
+    position: absolute;
+    display: none;
+    z-index: 3;
+    width: 10px;
+    top: 0;
+  }
+  .leftLine {
+    .fixedLine;
+    box-shadow: 6px 0 6px -2px rgba(0, 0, 0, 0.2);
+  }
+  .rightLine {
+    .fixedLine;
+    box-shadow: -6px 0 6px -2px rgba(0, 0, 0, 0.2);
+  }
+}

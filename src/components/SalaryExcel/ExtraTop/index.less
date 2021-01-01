@@ -1,0 +1,77 @@
+.iconBox {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  user-select: none;
+  outline: none;
+  &.iconBoxDisabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  span {
+    margin-left: 5px;
+  }
+  &:hover {
+    background-color: rgba(55, 53, 47, 0.08);
+  }
+}
+
+.operateBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  .left {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.menuContentBox {
+  .item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+.dropdownClass {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+  max-height: 300px;
+  min-height: 80px;
+  width: 220px;
+  border-right: 4px;
+  background: #fff;
+  :global {
+    .ant-dropdown-menu {
+      box-shadow: none;
+    }
+  }
+  &::before {
+    display: none;
+  }
+}
+
+.cascader {
+  :global {
+    .ant-cascader-menu {
+      height: unset;
+      min-height: 60px;
+      border-left: 1px solid #e8e8e8;
+      border-right: none;
+    }
+  }
+}

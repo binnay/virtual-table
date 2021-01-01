@@ -1,0 +1,53 @@
+:global {
+  .react-resizable-handle {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    z-index: 2;
+    border-left: none;
+    border-right: none;
+    cursor: col-resize;
+  }
+}
+
+.columnsItem {
+  cursor: pointer;
+  .faterBox {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fafafa;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &.rowSpan {
+      height: 64px;
+      line-height: 64px;
+    }
+  }
+  .childrenBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .children {
+      position: relative;
+      height: 32px;
+      line-height: 32px;
+      box-sizing: border-box;
+      padding: 0 12px;
+      border-right: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      background-color: #fafafa;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
